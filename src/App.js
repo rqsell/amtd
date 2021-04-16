@@ -13,6 +13,11 @@ function App() {
          <li>Login</li>
        </ul>
      </nav>
+     <body>
+       <container>
+         <img src="./airplane.jpg" className="airplane"/>
+       </container>
+     </body>
     </div>
   );
 }
