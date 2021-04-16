@@ -14,9 +14,10 @@ function App() {
        </ul>
      </nav>
      <body>
-       <container>
+       <div className="container">
          <img src="./airplane.jpg" className="airplane"/>
-       </container>
+         <div class="overlay overlayLeft"></div>
+       </div>
      </body>
     </div>
   );
