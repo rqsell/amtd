@@ -13,10 +13,11 @@ function App() {
      <nav className="navbar">
        <ul>
        <li><img className="logo" src="./logo2.png"/></li>
-         <li>Features</li>
-         <li>Services</li>
-         <li>Support</li>
-         <li>Login</li>
+         <li className= "one"> <a href="#">Features</a></li>
+         <li className="two"> <a href="#">Services</a></li>
+         <li className="three"><a href="#">Support</a></li>
+         <li className="four"><a href="#">Login</a></li>
+      
        </ul>
      </nav>
      <BrowserRouter>
@@ -26,7 +27,7 @@ function App() {
      </BrowserRouter>
      <footer className="footer">
        <span>
-         Last Updated 04/16/2021
+       Copyright © 2020 AMxTD Privacy
        </span>
      </footer>
     

@@ -5,16 +5,17 @@
   justify-content: space-between;
   align-items: center;
 }
-.navbar ul li{
+.navbar ul li a{
   list-style-type: none;
   text-decoration: none;
   font-family: 'Raleway', sans-serif;
+  color: black
 }
-.navbar ul li:hover{
+.navbar ul li a:hover{
   list-style-type: none;
-  text-decoration: none;
   font-family: 'Raleway', sans-serif;
   font-style: italic;
+ 
 }
 .navbar{
   padding-left: 5%;
@@ -32,68 +33,28 @@
   padding:0;
   text-align: left;
 }
-/* body */
-.airplane{
-height: 25%;
-width:100%;
-z-index: -1000;
-}
-/* overlay */
-.container {
+
+.navbar ul li{
   position: relative;
-  width: 100;
-  height: 25%;
 }
-
-.overlay {
+.navbar ul li a:before{
+  content: "";
   position: absolute;
-  transition: all 0.8s ease;
-  opacity: 0;
-  background-color:rgba(0,0,0,0.4);
-}
-
-.container:hover .overlay {
-  opacity: 1;
-}
-
-.overlayLeft{
-  height: 25%;
   width: 100%;
-  top: 0;
+  height: 2px;
+  bottom: 0;
   left: 0;
-  background-color:rgba(0,0,0,0.8)
-}
-
-.container:hover .overlayLeft{
-width: 100%;
-height: 100%;
+  background-color: black;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out;
 
 }
-/* text overlay */
-.textOverlay{
-  position: absolute;
-  top:0;
-  left: 0;
-  display:flex;
-  flex-direction: column;
-  align-items: center;
+.navbar ul li a:hover:before{
+  visibility: visible;
+  transform: scaleX(1);
 }
-.textOverlay h1 {
-  font-family: 'Chakra Petch', sans-serif;
-  color: white;
-}
-.about{
-  display: flex;
-  flex-direction: column;
-  width: 30%;
-  font-family: 'Open Sans', sans-serif;
-  color: white;
-}
-.about h2{
-  font-family: 'Raleway', sans-serif;
-  text-align: center;
-  color: white;
-}
+/* footer */
 .footer{
   height:15;
   width: 100%;

@@ -1,0 +1,62 @@
+/* body */
+.airplane{
+    height: 25%;
+    width:100%;
+    z-index: -1000;
+    }
+    /* overlay */
+    .container {
+      position: relative;
+      width: 100;
+      height: 25%;
+    }
+    
+    .overlay {
+      position: absolute;
+      transition: all 0.8s ease;
+      opacity: 0;
+      background-color:rgba(0,0,0,0.4);
+    }
+    
+    .container:hover .overlay {
+      opacity: 1;
+    }
+    
+    .overlayLeft{
+      height: 25%;
+      width: 100%;
+      top: 0;
+      left: 0;
+      background-color:rgba(0,0,0,0.8)
+    }
+    
+    .container:hover .overlayLeft{
+    width: 100%;
+    height: 100%;
+    
+    }
+    /* text overlay */
+    .textOverlay{
+      position: absolute;
+      top:0;
+      left: 0;
+      display:flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .textOverlay h1 {
+      font-family: 'Chakra Petch', sans-serif;
+      color: white;
+    }
+    .about{
+      display: flex;
+      flex-direction: column;
+      width: 30%;
+      font-family: 'Open Sans', sans-serif;
+      color: white;
+    }
+    .about h2{
+      font-family: 'Raleway', sans-serif;
+      text-align: center;
+      color: white;
+    }
