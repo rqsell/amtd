@@ -1,6 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
 import Home from "./Home.js"
+import {
+  BrowserRouter,
+  Switch,
+  Route,
+} from "react-router-dom";
 
 function App() {
   return (
@@ -14,12 +19,17 @@ function App() {
          <li>Login</li>
        </ul>
      </nav>
-     <Home/>
+     <BrowserRouter>
+       <Switch>
+          <Route exact path="/" render={(props) => <Home {...props} />} />
+       </Switch>
+     </BrowserRouter>
      <footer className="footer">
        <span>
          Last Updated 04/16/2021
        </span>
      </footer>
+    
     </div>
   );
 }
