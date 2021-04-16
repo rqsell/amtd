@@ -6,10 +6,11 @@ function App() {
     <div className="App">
      <nav className="navbar">
        <ul>
-       <li><img src="./logo.png"/></li>
+       <li><img className="logo" src="./logo2.png"/></li>
          <li>Features</li>
          <li>Services</li>
          <li>Support</li>
+         <li>Login</li>
        </ul>
      </nav>
     </div>
