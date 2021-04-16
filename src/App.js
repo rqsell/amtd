@@ -22,7 +22,7 @@ function App() {
      </nav>
      <BrowserRouter>
        <Switch>
-          <Route exact path="/amtd" render={(props) => <Home {...props} />} />
+          <Route exact path="/" render={(props) => <Home {...props} />} />
        </Switch>
      </BrowserRouter>
      <footer className="footer">
