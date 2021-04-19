@@ -1,11 +1,12 @@
 import React from 'react';
 import "./Home.css"
+
 function Home(props) {
     return (
         <div>
       
        <div className="container">
-         <img src="./airplane.jpg" className="airplane"/>
+         <img src="./jetimg2.jpg" className="airplane"/>
          
          <div class="overlay overlayLeft">
          <div className="textOverlay">
