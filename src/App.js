@@ -23,10 +23,20 @@ function App() {
          
        </ul>
      </nav>
-     <Modal isOpen={modalIsOpen}>
-     <div onClick={() => setModalIsOpen(!modalIsOpen)}>X</div>
-       <h2>Modal</h2>
-       <span> Modal Body</span>
+     <Modal isOpen={modalIsOpen} className="modal">
+   
+     <div className="login">
+     <div className="x" onClick={() => setModalIsOpen(!modalIsOpen)}>X</div>
+      <form className="form">
+        <p>Username</p>
+        <input type= "text" name= "username" placeholder="Enter Username"/>
+        <p>Password</p>
+        <input type= "text" name= "password" placeholder="Enter Password"/>
+        <div>
+        <input type= "submit" className="submit" name= "submit" value="Login"/>
+        </div>
+      </form>
+      </div>
      </Modal>
      <BrowserRouter>
        <Switch>
