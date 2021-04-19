@@ -90,6 +90,7 @@
   .form{
     display: flex;
     flex-direction: column;
+    padding-top: 5%;
     align-items: center;
     font-family: 'Raleway', sans-serif;
   }
@@ -136,11 +137,6 @@
     background: green;
 
   }
-      /* .form input[type="submit"]:hover {
-        cursor: pointer;
-        background: #39dc79;
-        color: #000;
-      } */
       .x{
        float:right;
       }
