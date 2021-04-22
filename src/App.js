@@ -41,6 +41,7 @@ const handleClick = () => {
                   <li>Features</li>
                   <li>Services</li>
                   <li>Support</li>
+                  <li onClick={() => setModalIsOpen(!modalIsOpen)} >Login</li>
               </ul>
            
      <Modal isOpen={modalIsOpen} className="modal" >
