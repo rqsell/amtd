@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import Home from "./Home.js";
 import Modal from 'react-modal';
+import HamburgerMenu from 'react-hamburger-menu'
 import React, { useState } from "react";
 import {
   BrowserRouter,
@@ -11,6 +12,12 @@ import {
 
 function App() {
   const [modalIsOpen,setModalIsOpen] = useState(false)
+  const[open,setOpen]= useState(false)
+const handleClick = () => {
+  setOpen(
+    !open
+  )
+}
   return (
     <div className="App">
      <nav className="navbar">
@@ -23,11 +30,24 @@ function App() {
          
        </ul>
      </nav>
-     <Modal isOpen={modalIsOpen} className="modal">
+     <HamburgerMenu
+     isOpen={open}
+       menuClicked={()=> handleClick()}
+       className="hamburger"
+     />
+   
+     <ul className="hamburgerMenu" id={open ? "clickedmenu" : ""}>
+    
+                  <li>Features</li>
+                  <li>Services</li>
+                  <li>Support</li>
+              </ul>
+           
+     <Modal isOpen={modalIsOpen} className="modal" >
    
      <div className="login">
      <div className="x" onClick={() => setModalIsOpen(!modalIsOpen)}>X</div>
-      <form className="form">
+      <form className="form" action="https://c0hcn406.caspio.com/dp/abe590008a7e3f2c55e6418e96d7" method="post">
         <p>Username</p>
         <input type= "text" name= "username" placeholder="Enter Username"/>
         <p>Password</p>
