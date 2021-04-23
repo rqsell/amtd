@@ -18,6 +18,11 @@ const handleClick = () => {
     !open
   )
 }
+const loginClick = () => {
+  setOpen(!open);
+  setModalIsOpen(!modalIsOpen)}
+  
+
   return (
     <div className="App">
      <nav className="navbar">
@@ -41,7 +46,7 @@ const handleClick = () => {
                   <li onClick={() => setOpen(!open)}>Features</li>
                   <li onClick={() => setOpen(!open)}> Services</li>
                   <li onClick={() => setOpen(!open)}>Support</li>
-                  <li onClick={() => setOpen(!open) } >Login</li>
+                  <li onClick={() => loginClick() } >Login</li>
               </ul>
            
      <Modal isOpen={modalIsOpen} className="modal" >
@@ -49,6 +54,7 @@ const handleClick = () => {
      <div className="login">
      <div className="x" onClick={() => setModalIsOpen(!modalIsOpen)}>X</div>
       <form className="form" action="https://c0hcn406.caspio.com/dp/abe590008a7e3f2c55e6418e96d7" method="post">
+      
         <p>Username</p>
         <input type= "text" name= "username" placeholder="Enter Username"/>
         <p>Password</p>
