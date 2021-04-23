@@ -3,7 +3,8 @@ import './App.css';
 import Home from "./Home.js";
 import Modal from 'react-modal';
 import HamburgerMenu from 'react-hamburger-menu'
-import React, { useState } from "react";
+import React, { useState , useEffect} from "react";
+import UseScripts from "./hooks/UseScripts"
 import {
   BrowserRouter,
   Switch,
@@ -20,9 +21,10 @@ const handleClick = () => {
 }
 const loginClick = () => {
   setOpen(!open);
-  setModalIsOpen(!modalIsOpen)}
-  
-
+  setModalIsOpen(!modalIsOpen)
+  UseScripts('https://c0hcn406.caspio.com/dp/abe590008a7e3f2c55e6418e96d7');
+}
+ 
   return (
     <div className="App">
      <nav className="navbar">
@@ -50,15 +52,21 @@ const loginClick = () => {
               </ul>
            
      <Modal isOpen={modalIsOpen} className="modal" >
-   
+    
      <div className="login">
      <div className="x" onClick={() => setModalIsOpen(!modalIsOpen)}>X</div>
-      <form className="form" action="https://c0hcn406.caspio.com/dp/abe590008a7e3f2c55e6418e96d7" method="post">
-      
-        <p>Username</p>
-        <input type= "text" name= "username" placeholder="Enter Username"/>
-        <p>Password</p>
-        <input type= "text" name= "password" placeholder="Enter Password"/>
+      <form className="form" action="https://c0hcn406.caspio.com/dp/abe590008a7e3f2c55e6418e96d7"  method="post">
+      <input type="hidden" name="cbUniqueFormId" value="_5b47dcf613cb9f"/>
+      <input type="hidden" name="appKey" value="abe590008a7e3f2c55e6418e96d7"/>
+      <input type="hidden" name="pathname" value="https://www.amxtdigital.com/"/>
+      <input type="hidden" name="ajaxDeploy" value="False"/>
+      <input type="hidden" name="PrevPageID" value="0"/>
+      <input type="hidden" name="Login" value="1"/>
+      <input type="hidden" name="cbPageType" value="Auth"/><input type="hidden" name="cbAP" value="cb"></input>
+        <label for="xip_Login_Email"> Username </label>
+        <input type= "text" name= "username" placeholder="Enter Username" name="xip_Login_Email" />
+        <label for="xip_Login_Password">Password</label>
+        <input type="password"  name= "password" placeholder="Enter Password"/>
         <div>
         <input type= "submit" className="submit" name= "submit" value="Login"/>
         </div>
