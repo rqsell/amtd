@@ -38,10 +38,10 @@ const handleClick = () => {
    
      <ul className="hamburgerMenu" id={open ? "clickedmenu" : ""}>
     
-                  <li>Features</li>
-                  <li>Services</li>
-                  <li>Support</li>
-                  <li onClick={() => setModalIsOpen(!modalIsOpen)} >Login</li>
+                  <li onClick={() => setOpen(!open)}>Features</li>
+                  <li onClick={() => setOpen(!open)}> Services</li>
+                  <li onClick={() => setOpen(!open)}>Support</li>
+                  <li onClick={() => setOpen(!open) } >Login</li>
               </ul>
            
      <Modal isOpen={modalIsOpen} className="modal" >

@@ -11,7 +11,7 @@ function Home(props) {
            
          
        <div className="container">
-         <img src="./jetimg2.jpg" className="airplane"/>
+         <img src="./jetimg3.jpg" className="airplane"/>
          
          {/* Textbox for Mobile */}
          <div className= "mobiletextbox">
