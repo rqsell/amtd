@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import Home from "./Home.js";
-import Modal from 'react-modal';
+import Carousel from "./Carousels"
 import HamburgerMenu from 'react-hamburger-menu'
 import React, { useState , useEffect} from "react";
 import UseScripts from "./hooks/UseScripts"
@@ -20,20 +20,20 @@ const handleClick = () => {
   )
 }
 const loginClick = () => {
-  setOpen(!open);
   setModalIsOpen(!modalIsOpen)
-  UseScripts('https://c0hcn406.caspio.com/dp/abe590008a7e3f2c55e6418e96d7');
+
+  // UseScripts('https://c0hcn406.caspio.com/dp/abe590008a7e3f2c55e6418e96d7');
 }
  
   return (
     <div className="App">
-     <nav className="navbar">
+     <nav className="navbar2">
        <ul>
        <li><img className="logo" src="./logo2.png"/></li>
          <li className= "one"> <a href="#">Features</a></li>
          <li className="two"> <a href="#">Services</a></li>
          <li className="three"><a href="#">Support</a></li>
-         <li className="four" onClick={() => setModalIsOpen(!modalIsOpen)} ><a href="#" >Login</a></li>
+         <li className="four" onClick={() => loginClick()} ><a href="#" >Login</a></li>
          
        </ul>
      </nav>
@@ -51,8 +51,8 @@ const loginClick = () => {
                   <li onClick={() => loginClick() } >Login</li>
               </ul>
            
-     <Modal isOpen={modalIsOpen} className="modal" >
-    
+  {modalIsOpen ? (
+     
      <div className="login">
      <div className="x" onClick={() => setModalIsOpen(!modalIsOpen)}>X</div>
       <form className="form" action="https://c0hcn406.caspio.com/dp/abe590008a7e3f2c55e6418e96d7"  method="post">
@@ -72,10 +72,10 @@ const loginClick = () => {
         </div>
       </form>
       </div>
-     </Modal>
+      ) : null }
      <BrowserRouter>
        <Switch>
-          <Route exact path="/" render={(props) => <Home {...props} />} />
+          <Route exact path="/" render={(props) => <Carousel {...props} />} />
        </Switch>
      </BrowserRouter>
      <footer className="footer">
