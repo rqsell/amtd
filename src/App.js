@@ -66,7 +66,7 @@ const loginClick = () => {
         <label for="xip_Login_Email"> Username </label>
         <input type= "text" name= "username" placeholder="Enter Username" name="xip_Login_Email" />
         <label for="xip_Login_Password">Password</label>
-        <input type="password"  name= "password" placeholder="Enter Password"/>
+        <input type="password"  name="xip_Login_Password" placeholder="Enter Password"/>
         <div>
         <input type= "submit" className="submit" name= "submit" value="Login"/>
         </div>
