@@ -12,8 +12,8 @@ function Carousels(props) {
       alt="First slide"
     />
     <Carousel.Caption>
-      <h3>First slide label</h3>
-      <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+      <h3>About Us</h3>
+      <p>Aircraft Maintenance Tracking Digital is a simplified and easy tool that lets you instantly check the status of upkeep for all of your aircrafts. Manage tasks, check dates and verify all the information you need to know to ensure safety.  </p>
     </Carousel.Caption>
   </Carousel.Item>
   <Carousel.Item interval={500}>
@@ -23,8 +23,8 @@ function Carousels(props) {
       alt="Second slide"
     />
     <Carousel.Caption>
-      <h3>Second slide label</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <h3>Simplified Dashboard</h3>
+      <p>We prioritize tracking your maintenance needs using our simplified and easy to use dashboard.</p>
     </Carousel.Caption>
   </Carousel.Item>
   <Carousel.Item>
@@ -34,8 +34,8 @@ function Carousels(props) {
       alt="Third slide"
     />
     <Carousel.Caption>
-      <h3>Third slide label</h3>
-      <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+      <h3>Built For You</h3>
+      <p>Aircraft Maintenance Tracking Digital was built to streamline the tracking process with an easy to use interface. </p>
     </Carousel.Caption>
   </Carousel.Item>
 </Carousel> 
