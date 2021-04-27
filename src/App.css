@@ -196,7 +196,7 @@ z-index: 1001;
     transform: translate3d(0vw, 0, 0);
     overflow: hidden;
   }
-  .navbar li{
+  .navbar2 li{
     display:none;
   }
   .modal{
