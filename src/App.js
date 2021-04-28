@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import Home from "./Home.js";
+
 import Carousel from "./Carousels"
 import HamburgerMenu from 'react-hamburger-menu'
 import React, { useState , useEffect} from "react";
@@ -80,7 +80,7 @@ const loginClick = () => {
      </BrowserRouter>
      <footer className="footer">
        <span>
-       Copyright © 2020 AMxTD Privacy
+       Copyright © 2020 Aircraft Maitenance Tracking DigitalPrivacy 
        </span>
      </footer>
     

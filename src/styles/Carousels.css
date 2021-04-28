@@ -13,27 +13,17 @@
    height: 35vw;
 
   }
-  .details{
-      display: flex;
-      justify-content: space-between;
-      padding: 2% 10% 2% 10%;
-      background-color: black;
-      color: white;
-      text-align: center;
-      font-family: 'Open Sans', sans-serif;
-  }
-  .details h3 {
-    font-family: 'Raleway', sans-serif;
-  }
+  
   
   .caroimg {
       position: absolute;
-      object-fit:cover;
+      object-fit:stretch;
       top: 0;
       left: 0;
       min-height: 500px;
 
   }
+  /* Text Front Page */
   .about{
       background-color: black;
       font-family: 'Open Sans', sans-serif;
@@ -46,3 +36,43 @@
     font-family: 'Raleway', sans-serif;
   }
  
+  .details{
+    display: flex;
+    justify-content: space-between;
+    padding: 2% 10% 2% 10%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+}
+.details h3 {
+  font-family: 'Raleway', sans-serif;
+}
+.carotxt{
+    background-size:cover;
+    background: 
+    /* top, transparent red */ 
+    linear-gradient(
+        rgba(0,0,0,0.6),
+        rgba(0,0,0,0.6)
+    ),
+    /* bottom, image */
+    url('https://horizon-media.s3-eu-west-1.amazonaws.com/s3fs-public/field/image/clouds-mf.jpg');
+
+}
+.carotxt, #header, #about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+  color:white;
+}
+#header{
+    font-family: 'Chakra Petch', sans-serif;
+}
+ #about{
+     width: 35%;
+     font-family: 'Open Sans', sans-serif;
+ }

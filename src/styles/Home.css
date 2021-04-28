@@ -51,7 +51,8 @@
     .about{
       display: flex;
       flex-direction: column;
-      width: 30%;
+      width: 20%;
+      height: auto;
       font-family: 'Open Sans', sans-serif;
       color: white;
     }

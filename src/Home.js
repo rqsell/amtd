@@ -1,15 +1,16 @@
 import React from 'react';
 import "./styles/Home.css"
-import Carousels from "./Carousels"
+
 function Home(props) {
     return (
+      <>
         <div>
        {/* For Mobile */}
        <div >
        <h1 className= "header">Aircraft Maintenance Tracking Digital</h1>
        
            
-       <Carousels {...props}/>    
+         
        <div className="container">
 
          
@@ -26,9 +27,6 @@ function Home(props) {
              <h2> About Us</h2>
   <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin a sem felis. Fusce placerat nisi dictum elit condimentum, id ornare velit lobortis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Morbi at dolor feugiat nunc luctus semper non ac ligula. Duis eu urna pharetra nisi lacinia venenatis. Aenean maximus consectetur arcu, eu varius leo hendrerit ut. Quisque varius orci id sapien tincidunt, quis maximus tellus posuere.</span>
            </div>
-           <div className="details">
-
-           </div>
          </div>
          </div>
        </div>
@@ -36,6 +34,7 @@ function Home(props) {
             
         </div>
         </div>
+        </>
     );
 }
 
