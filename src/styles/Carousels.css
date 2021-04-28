@@ -1,0 +1,42 @@
+.caropage{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.caro{
+    width: 100vw;
+    height: auto;
+}
+.caroitem{
+   width: 100vw;
+   height: 35vw;
+
+  }
+  .details{
+      display: flex;
+      justify-content: space-between;
+      padding: 2% 10% 2% 10%;
+      background-color: black;
+      color: white;
+      text-align: center;
+      font-family: 'Open Sans', sans-serif;
+  }
+  
+  .caroimg {
+      position: absolute;
+      object-fit:cover;
+      top: 0;
+      left: 0;
+      min-height: 500px;
+
+  }
+  .about{
+      background-color: black;
+      font-family: 'Open Sans', sans-serif;
+      padding: 2% 10% 2% 10%;
+      color:white;
+      width: 100%;
+      text-align: center;
+  }
+ 
