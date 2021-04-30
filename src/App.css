@@ -67,13 +67,14 @@ font-style: italic;
   visibility: visible;
   transform: scaleX(1);
 }
+
 /* footer */
 .footer{
   background: RGB(227, 226, 222);
   color: black;
   height: 100%;
   width: 100%;
-  /* margin-top: 3%; */
+  margin: 0;
   text-align: center;
   font-family: 'Open Sans', sans-serif;
 }
