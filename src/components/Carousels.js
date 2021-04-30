@@ -1,6 +1,6 @@
 import React from 'react';
 import Carousel from 'react-bootstrap/Carousel'
-import "./styles/Carousels.css"
+import "../styles/Carousels.css"
 
 function Carousels(props) {
     return (
