@@ -38,7 +38,8 @@
     }
   }  */
   .dashpage header{
-      color: white
+      color: white;
+      font-family: 'Chakra Petch', sans-serif;
   }
   .dropdown ul{
     /* overflow-y: hidden;
@@ -52,14 +53,15 @@
     transition: all .2s ease-in-out;
     list-style-type: none;
     text-decoration: none;
-    font-family: 'Raleway', sans-serif;
+    
+    font-family: 'Open Sans', sans-serif;
     color: white
 }
 .dropdown li a{
     transition: all .2s ease-in-out;
     list-style-type: none;
     text-decoration: none;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     color: white
 }
 .dropdown li:hover{
@@ -69,8 +71,6 @@ color: white;
 .dropdown, 
 button,
  ul{
-
-    font-family: 'Raleway', sans-serif;
     display: flex;
     flex-direction: column;
     list-style-type: none;
