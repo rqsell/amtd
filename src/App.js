@@ -32,7 +32,7 @@ const loginClick = () => {
        <Link to= "/">
        <li><img className="logo" src="./logo2.png"/></li>
        </Link>
-          <Link to="/dashboard">
+          <Link to="/Dashboard"  style={{ textDecoration: "none" }}>
                   <li onClick={() => setOpen(!open)}> Dashboard</li>
                   </Link>
          <li className="three"><a href="#">Support</a></li>
@@ -77,12 +77,12 @@ const loginClick = () => {
       </form>
       </div>
       ) : null }
-     <BrowserRouter>
+  
        <Switch>
           <Route exact path="/" render={(props) => <Carousel {...props} />} />
-          <Route exact path="/dashboard" render={(props) => <Dashboard {...props} />} />
+          <Route exact path="/Dashboard" render={(props) => <Dashboard {...props} />} />
        </Switch>
-     </BrowserRouter>
+
      <footer className="footer">
        <span>
        Copyright © 2020 Aircraft Maitenance Tracking DigitalPrivacy 

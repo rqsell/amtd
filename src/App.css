@@ -8,8 +8,14 @@
   background: RGB(247, 242, 242);
  
 }
-.navbar2 li{
+.navbar2 ul li{
   padding-right: 10%;
+  list-style-type: none;
+  font-family: 'Raleway', sans-serif;
+  color: #000000;
+}
+.navbar2 ul li:hover{
+font-style: italic;
 }
 .navbar2 ul li a{
 
@@ -22,6 +28,7 @@
   list-style-type: none;
   font-family: 'Raleway', sans-serif;
   font-style: italic;
+  text-decoration: none; 
  
 }
 .navbar2{
