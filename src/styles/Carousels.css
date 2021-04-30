@@ -3,6 +3,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 0px;
+    padding-top: 0px;
+    background: RGB(247, 242, 242);
 }
 .caro{
     width: 100vw;
@@ -25,10 +28,10 @@
   }
   /* Text Front Page */
   .about{
-      background-color: black;
+    background-color: RGB(247, 242, 242);
       font-family: 'Open Sans', sans-serif;
       padding: 2% 10% 2% 10%;
-      color:white;
+      color:black;
       width: 100%;
       text-align: center;
   }
@@ -40,8 +43,8 @@
     display: flex;
     justify-content: space-between;
     padding: 2% 10% 2% 10%;
-    background-color: black;
-    color: white;
+    background: RGB(247, 242, 242);
+    color: black;
     text-align: center;
     font-family: 'Open Sans', sans-serif;
 }

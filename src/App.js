@@ -8,6 +8,7 @@ import {
   BrowserRouter,
   Switch,
   Route,
+  Link
 } from "react-router-dom";
 
 function App() {
@@ -25,11 +26,15 @@ const loginClick = () => {
  
   return (
     <div className="App">
+     <BrowserRouter>
      <nav className="navbar2">
        <ul>
+       <Link to= "/">
        <li><img className="logo" src="./logo2.png"/></li>
-         <li className= "one"> <a href="#">Features</a></li>
-         <li className="two"> <a href="#">Services</a></li>
+       </Link>
+          <Link to="/dashboard">
+                  <li onClick={() => setOpen(!open)}> Dashboard</li>
+                  </Link>
          <li className="three"><a href="#">Support</a></li>
          <li className="four" onClick={() => loginClick()} ><a href="#" >Login</a></li>
          
@@ -43,8 +48,9 @@ const loginClick = () => {
    
      <ul className="hamburgerMenu" id={open ? "clickedmenu" : ""}>
     
-                  <li onClick={() => setOpen(!open)}>Features</li>
-                  <li onClick={() => setOpen(!open)}> Services</li>
+                <Link to="/dashboard">
+                  <li onClick={() => setOpen(!open)}> Dashboard</li>
+                  </Link>
                   <li onClick={() => setOpen(!open)}>Support</li>
                   <li onClick={() => loginClick() } >Login</li>
               </ul>
@@ -82,7 +88,7 @@ const loginClick = () => {
        Copyright © 2020 Aircraft Maitenance Tracking DigitalPrivacy 
        </span>
      </footer>
-    
+     </BrowserRouter>
     </div>
   );
 }

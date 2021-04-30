@@ -1,11 +1,12 @@
-
-
+/*  */
 .navbar2 ul {
   display: flex;
   flex-direction: row;
   list-style-type: none;
   justify-content: space-around;
   align-items: center;
+  background: RGB(247, 242, 242);
+ 
 }
 .navbar2 li{
   padding-right: 10%;
@@ -15,7 +16,7 @@
   list-style-type: none;
   text-decoration: none;
   font-family: 'Raleway', sans-serif;
-  color: black
+  color: black;
 }
 .navbar2 ul li a:hover{
   list-style-type: none;
@@ -28,10 +29,9 @@
   padding-right: 5%;
   padding-top: 0%;
   padding-bottom: 0%;
-
-
+background: RGB(247, 242, 242);
 }
-
+.navbar2 > ul {margin: 0}
 .logo{
   height: 15vh;
   width:auto;
@@ -62,8 +62,8 @@
 }
 /* footer */
 .footer{
-  background-color: black;
-  color: white;
+  background: RGB(247, 242, 242);
+  color: black;
   height: 100%;
   width: 100%;
   /* margin-top: 3%; */

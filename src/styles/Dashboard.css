@@ -1,33 +1,92 @@
 .dashpage{
+   
     display: flex;
     flex-direction: column;
     list-style-type: none;
     font-family: 'Raleway', sans-serif;
     align-items: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    background-size:cover;
+    height: 80vh;
+    width: 100%;
+    background: 
+    /* top, transparent red */ 
+    linear-gradient(
+        rgba(0,0,0,0.6),
+        rgba(0,0,0,0.6)
+    ),
+    /* bottom, image */
+    url('https://horizon-media.s3-eu-west-1.amazonaws.com/s3fs-public/field/image/clouds-mf.jpg');
 }
 
+/* @keyframes slidedown {
+    0% {
+      visibility: hidden;
+      height: 0;
+    }
+  
+    95% {
+      visibility: visible;
+      height: 75%;
+    }
+  
+    /* Set height to 'auto' after animation for spacing showing form-invalid feedback message */
+    /* 100% {
+      visibility: visible;
+      height: auto;
+    }
+  }  */
+  .dashpage header{
+      color: white
+  }
+  .dropdown ul{
+    /* overflow-y: hidden;
+	max-height: 500px; approximate max height */
+
+	transition-property: all;
+	transition-duration: .5s;
+	transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+  }
 .dropdown li{
+    transition: all .2s ease-in-out;
     list-style-type: none;
     text-decoration: none;
     font-family: 'Raleway', sans-serif;
-    color: black
+    color: white
+}
+.dropdown li a{
+    transition: all .2s ease-in-out;
+    list-style-type: none;
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    color: white
+}
+.dropdown li:hover{
+    transform: scale(1.5);
+color: white;
 }
 .dropdown, 
 button,
  ul{
+
     font-family: 'Raleway', sans-serif;
     display: flex;
     flex-direction: column;
     list-style-type: none;
     justify-content: space-around;
-    align-items: center;
+    /* align-items: center; */
+   
 }
 .dropdown button {
-    border-color: blue;
+    border-color: black;
+    font-size: 25px;
+    /* width: 10vw;
+    height: auto; */
     color: #fff;
-    box-shadow: 0 0 40px 40px blue inset, 0 0 0 0 blue;
+    box-shadow: 0 0 40px 40px black inset, 0 0 0 0 black;
     transition: all 150ms ease-in-out;
 }
    .dropdown button:hover {
-      box-shadow: 0 0 10px 0 blue inset, 0 0 10px 4px blue;
+      box-shadow: 0 0 10px 0 black inset, 0 0 10px 4px black;
    };
