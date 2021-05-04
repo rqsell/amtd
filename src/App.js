@@ -30,7 +30,7 @@ const loginClick = () => {
      <nav className="navbar2">
        <ul>
        <Link to= "/">
-       <li><img className="logo" src="./logo2.png"/></li>
+       <li><img className="logo" src="./logoblack3.png"/></li>
        </Link>
           <Link to="/Dashboard"  style={{ textDecoration: "none" }}>
                   <li onClick={() => setOpen(!open)}> Dashboard</li>

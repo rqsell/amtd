@@ -161,7 +161,7 @@ z-index: 1001;
        float:right;
       }
       .x:hover{
-        color: black;
+        color: gray;
         cursor: pointer;
       }
     /* Hamburger menu */
