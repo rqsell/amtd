@@ -28,7 +28,7 @@
   }
   /* Text Front Page */
   .about{
-    background-color: RGB(227, 226, 222);
+    background-color: #b4b8bf;
       font-family: 'Open Sans', sans-serif;
       padding: 2% 10% 2% 10%;
       color:black;
@@ -43,7 +43,7 @@
     display: flex;
     justify-content: space-between;
     padding: 2% 10% 2% 10%;
-    background: RGB(227, 226, 222);
+    background: #b4b8bf;
     color: black;
     text-align: center;
     font-family: 'Open Sans', sans-serif;

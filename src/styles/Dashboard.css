@@ -83,8 +83,8 @@ button,
     font-size: 25px;
     /* width: 10vw;
     height: auto; */
-    color: #fff;
-    box-shadow: 0 0 40px 40px black inset, 0 0 0 0 black;
+    color: black;
+    box-shadow: 0 0 40px 40px gray inset, 0 0 0 0 gray;
     transition: all 150ms ease-in-out;
 }
    .dropdown button:hover {
