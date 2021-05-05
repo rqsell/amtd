@@ -14,10 +14,8 @@
 .caroitem{
    width: 100vw;
    height: 35vw;
-
   }
-  
-  
+ 
   .caroimg {
       position: absolute;
       object-fit:stretch;
@@ -79,3 +77,8 @@
      width: 35%;
      font-family: 'Open Sans', sans-serif;
  }
+
+ .containerbutton{
+  display: flex;
+  flex-direction: row;
+}

@@ -8,21 +8,34 @@ function Dashboard(props) {
             <h1>What are you looking for today?</h1>
         </header>
             <div className= "dropdown">
-                <button  onClick={()=> setBtn(!btn)}> Information Options</button>
+            <div>
+                <button  onClick={()=> setBtn(!btn)} id={btn ? "clickedbutton" : ""}> Information Options</button>
+                </div>
                 {btn ? (
-                    <ul >
+                    <div className="containerbutton">
+
+                    <span className="column">
                     <li>AD</li>
                     <li>Aircraft Info</li>
                     <li>Airframe Log Books</li>
                     <li>Airframe Status</li>
+                    </span>
+                    <br/>
+                    <span className="column">
                     <li>APU Log Books</li>
                     <li><a href= "https://c0hcn406.caspio.com/dp/abe59000b2dd4691b640499e9d99">APU Status</a></li>
-                     <li>Digital Records</li>
+                    <li>Digital Records</li>
+                     </span>
+                     <br/>
+                     <span className="column">
                      <li>Engine Log Books</li>
                      <li>Engine Status</li>
                     <li>Flight Log</li>
                     <li>SB</li>
-                </ul>
+                    </span>
+                    
+                
+                </div>
                 ) : null}
                 
             </div>
