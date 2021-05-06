@@ -90,11 +90,15 @@ font-style: italic;
   height: auto;
 
 }
+/* .contact{
+   background:rgba(75, 188, 226, 0.5)
+} */
 .login {
 position: absolute;
   width: 40%;
   height: auto;
   background: rgba(0, 0, 0, 0.9);
+
   border-radius: 14px;
   color: #fff;
   top: 50%;
@@ -117,6 +121,7 @@ z-index: 1001;
     padding-top: 5%;
     align-items: center;
     font-family: 'Raleway', sans-serif;
+    text-align: center;
   }
   .form p {
       margin: 0;
@@ -131,21 +136,22 @@ z-index: 1001;
     .form input::placeholder{
       color:white
     }
+   
     .form input[type="text"],
-   .form input[type="placeholder"] {
-     
-      color: #fff;
-    }
-    .form input[type="text"],
-   .form input[type="password"] {
+    .form input[type="email"],
+   .form input[type="password"],
+   .form input[type="message"]  {
       border: none;
       border-bottom: 1px solid #fff;
       background: transparent;
       outline: none;
-      height: 40px;
+      height: 60px;
       color: #fff;
       font-size: 16px;
     }
+   .message{
+     margin-bottom: 2%;
+   }
   .submit {
     font-family: 'Raleway', sans-serif;
       border: none;
@@ -182,6 +188,9 @@ z-index: 1001;
     padding-top: 5%;
     align-items: center;
     font-family: 'Raleway', sans-serif;
+    }
+    .message{
+      text-align: center;
     }
       /* For Iphone */
 @media (max-width: 500px){

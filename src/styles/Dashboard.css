@@ -79,7 +79,7 @@ button,
     justify-content: center;
   }
   .column{
-    padding-right: 10%;
+    padding: 5%;
     background-color: rgba(0,0,0,0.6);
     
   }

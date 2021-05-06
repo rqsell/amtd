@@ -17,29 +17,30 @@ export default function ContactUs() {
   }
 
   return (
-    <form className="contact" onSubmit={sendEmail}>
+    <div className="contact">
+    <form className="form" onSubmit={sendEmail}>
 
     <h1 className="p-heading1">Get in Touch</h1>
+   
       <input type="hidden" name="contact_number" />
-  
-      <FormGroup controlId="formBasicName">
-      <Label className="text-muted">Name</Label>
-      <br/>
+    
+    <div>
       <input type="text" name="user_name" placeholder="Name"  className="text-primary"/>
-</FormGroup>
+</div>
 
-      <FormGroup controlId="formBasicEmail">
-      <Label className="text-muted">Email address</Label>
-      <br/>
+      <div>
       <input type="email" placeholder="Enter email"  className="text-primary" name="user_email" />
-      </FormGroup>
+      </div>
 
-      <FormGroup controlId="formBasicMessage">
-      <Label className="text-muted">Message</Label>
+   
+      <Label className="message">Message</Label>
       <br/>
-      <textarea name="message"   className="text-primary" placeholder="What can we help you with today?" />
-      </FormGroup>
-      <input type="submit" value="Send" />
+      <textarea name="message"   rows="4" cols="50" className="message" placeholder="What can we help you with today?" />
+  <div>
+      <input type="submit" className="submit" value="Send" />
+      </div>
     </form>
+    </div>
+  
   );
 }

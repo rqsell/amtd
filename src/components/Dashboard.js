@@ -8,10 +8,10 @@ function Dashboard(props) {
             <h1>What are you looking for today?</h1>
         </header>
             <div className= "dropdown">
-            <div>
+            {/* <div>
                 <button  onClick={()=> setBtn(!btn)} id={btn ? "clickedbutton" : ""}> Information Options</button>
                 </div>
-                {btn ? (
+                {btn ? ( */}
                     <div className="containerbutton">
 
                     <span className="column">
@@ -36,7 +36,7 @@ function Dashboard(props) {
                     
                 
                 </div>
-                ) : null}
+                {/* ) : null} */}
                 
             </div>
         </div>
