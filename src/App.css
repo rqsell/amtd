@@ -171,7 +171,13 @@ z-index: 1001;
     .hamburgerMenu{
       display:none;
     }
-    
+    .contact{
+      display: flex;
+    flex-direction: column;
+    padding-top: 5%;
+    align-items: center;
+    font-family: 'Raleway', sans-serif;
+    }
       /* For Iphone */
 @media (max-width: 500px){
   

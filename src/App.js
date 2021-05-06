@@ -3,6 +3,7 @@ import './App.css';
 import Carousel from "./components/Carousels"
 import Dashboard from "./components/Dashboard"
 import HamburgerMenu from 'react-hamburger-menu'
+import ContactUs from "./components/ContactUs"
 import React, { useState , useEffect} from "react";
 import {
   BrowserRouter,
@@ -13,6 +14,7 @@ import {
 
 function App() {
   const [modalIsOpen,setModalIsOpen] = useState(false)
+  const [contact, setContact] = useState(false)
   const[open,setOpen]= useState(false)
 const handleClick = () => {
   setOpen(
@@ -35,7 +37,7 @@ const loginClick = () => {
           <Link to="/Dashboard"  style={{ textDecoration: "none" }}>
                   <li onClick={() => setOpen(!open)}> Dashboard</li>
                   </Link>
-         <li className="three"><a href="#">Support</a></li>
+         <li className="three" onClick={() => setContact(!contact)}>Support</li>
          <li className="four" onClick={() => loginClick()} ><a href="#" >Login</a></li>
          
        </ul>
@@ -54,7 +56,12 @@ const loginClick = () => {
                   <li onClick={() => setOpen(!open)}>Support</li>
                   <li onClick={() => loginClick() } >Login</li>
               </ul>
-           
+           {contact ? (
+             <div className= "login">
+             <div className="x" onClick={() => setContact(!contact)}>X</div>
+<ContactUs/>
+             </div>
+           ): null}
   {modalIsOpen ? (
      
      <div className="login">
@@ -81,6 +88,7 @@ const loginClick = () => {
        <Switch>
           <Route exact path="/" render={(props) => <Carousel {...props} />} />
           <Route exact path="/Dashboard" render={(props) => <Dashboard {...props} />} />
+          <Route exact path="/Help" render={(props) => <ContactUs{...props} />} />
        </Switch>
 
      <footer className="footer">
