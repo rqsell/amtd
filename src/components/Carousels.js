@@ -6,7 +6,7 @@ function Carousels(props) {
     return (
         <div className= "caropage">
            <Carousel classname="caro">
-  <Carousel.Item interval={1000}  className="caroitem">
+  <Carousel.Item interval={5000}  className="caroitem">
 
   <div className="carotxt">
 <section id="header">
@@ -18,18 +18,26 @@ function Carousels(props) {
       </section>
       </div>
   </Carousel.Item>
-  <Carousel.Item interval={500}  className="caroitem">
+  <Carousel.Item interval={5000}  className="caroitem">
     <img
       className="d-block w-100"
       id="caroimg"
+      // src="./dataimg2.jpg"
       src="./jetimg5.jpg"
       alt="Second slide"
     
     />
   
   </Carousel.Item>
-  <Carousel.Item className="caroitem">
-  <div className="carotxt">
+  <Carousel.Item interval={5000} className="caroitem2">
+  <img
+      className="d-block w-100"
+      id="caroimg"
+      src="./dataimg2.jpg"
+      alt="Third slide"
+    
+    />
+  <div className="carotxt2">
 <section id="header">
   <h1>Access Your Information</h1>
 </section>

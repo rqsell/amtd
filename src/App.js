@@ -93,7 +93,7 @@ const loginClick = () => {
 
      <footer className="footer">
        <span>
-       Copyright © 2020 Aircraft Maitenance Tracking DigitalPrivacy 
+       Copyright © 2020 Aircraft Maitenance Tracking Digital Privacy 
        </span>
      </footer>
      </BrowserRouter>

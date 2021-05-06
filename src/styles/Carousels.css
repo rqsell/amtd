@@ -15,6 +15,13 @@
    width: 100vw;
    height: 35vw;
   }
+  .caroitem2{
+    width: 100vw;
+    height: 35vw;
+    position: relative;
+    text-align: center;
+    z-index: 1;
+   }
  
   .caroimg {
       position: absolute;
@@ -26,11 +33,11 @@
   }
   /* Text Front Page */
   .about{
-    background-color: #b4b8bf;
+    /* background-color: #b4b8bf; */
       font-family: 'Open Sans', sans-serif;
       padding: 2% 10% 2% 10%;
       color:black;
-      width: 100%;
+      width: 65%;
       text-align: center;
   }
   .about h1 {
@@ -41,7 +48,7 @@
     display: flex;
     justify-content: space-between;
     padding: 2% 10% 2% 10%;
-    background: #b4b8bf;
+    /* background: #b4b8bf; */
     color: black;
     text-align: center;
     font-family: 'Open Sans', sans-serif;
@@ -61,7 +68,17 @@
     url('https://horizon-media.s3-eu-west-1.amazonaws.com/s3fs-public/field/image/clouds-mf.jpg');
 
 }
-.carotxt, #header, #about{
+.carotxt2{
+  position: absolute;
+  top:0;
+      left: 0;
+      display:flex;
+      flex-direction: column;
+      align-items: center;
+      background: rgba(0,0,0,0.6)
+    
+}
+.carotxt, .carotxt2{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -74,7 +91,9 @@
     font-family: 'Chakra Petch', sans-serif;
 }
  #about{
+  color:white;
      width: 35%;
+     height: auto;
      font-family: 'Open Sans', sans-serif;
  }
 
